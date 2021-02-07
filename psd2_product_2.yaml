@@ -1,0 +1,32 @@
+product: 1.0.0
+info:
+  name: psd2
+  title: psd2
+  version: '2'
+visibility:
+  view:
+    enabled: true
+    type: public
+    tags: []
+    orgs: []
+  subscribe:
+    enabled: true
+    type: authenticated
+    tags: []
+    orgs: []
+apis:
+  oauth2:
+    $ref: oauth2_1.0.0.yaml
+  mock:
+    $ref: mock_1.0.0.yaml
+plans:
+  new-plan-1:
+    title: New Planw
+    apis: {}
+  gold:
+    title: gold
+    description: gold
+    approval: true
+    rate-limit:
+      hard-limit: true
+      value: 100/1minute

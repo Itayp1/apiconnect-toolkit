@@ -1,0 +1,44 @@
+apic login --server=Cloud.apiconnect.ibmcloud.com --apikey=c3ceULYH21V62DDN_2eCrvub-UHYmLWNmuDl6xutvN-c
+-server=apimanager.eu-gb.apiconnect.cloud.ibm.com  --all-organizations --all-catalogs 
+
+
+apic login --username some-user --password some-password --server mgmnthost.com
+
+apic catalogs --all-organizations --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic publish mock-product_1.0.0.yaml --catalog dev --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic  --all-organizations --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+
+apic drafts:push mock.yaml --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic drafts:clone  --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+apic drafts:publish mock_1.0.0.yaml  --catalog tst --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic drafts:publish mock_1.0.0.yaml  --catalog dev --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic drafts:publish mock.yaml  --catalog dev  --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic config:set catalog=apic-catalog://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/dev
+
+apic drafts:push psd2_product_25.yaml --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+
+apic drafts:publish psd2:.2.5  --space tst --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic products:publish psd2:.2.5  --space tst --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic drafts --organization peretzitaygmailcom1606596667215-dev  --server=apimanager.eu-gb.apiconnect.cloud.ibm.com   
+
+apic publish --scope space psd2_product_25.yaml --space dev  --catalog tst --organization peretzitaygmailcom1606596667215-dev --server=apimanager.eu-gb.apiconnect.cloud.ibm.com 
+
+apic config:set organization=peretzitaygmailcom1606596667215-dev
+apic-catalog://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/dev
+apic-catalog://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/tst
+apic-catalog://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/prd
+
+
+apic-space://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/tst/spaces/new-space
+apic-space://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/tst/spaces/dev
+apic-space://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/tst/spaces/prd

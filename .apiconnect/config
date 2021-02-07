@@ -1,0 +1,30 @@
+apimanager.eu-gb.apiconnect.cloud.ibm.com.meta:
+  formFactor: BLUEMIX_PUBLIC
+  serverCapabilities:
+    authTypes:
+      - basic
+      - token
+  toolkit:
+    version_recommended: 2.1.30
+    version_minimum: 2.1.30
+apim_server: apimanager.us-east.apiconnect.cloud.ibm.com
+apimanager.us-south.apiconnect.cloud.ibm.com.meta:
+  formFactor: BLUEMIX_PUBLIC
+  serverCapabilities:
+    authTypes:
+      - basic
+      - token
+  toolkit:
+    version_recommended: 2.1.30
+    version_minimum: 2.1.30
+apimanager.us-east.apiconnect.cloud.ibm.com.meta:
+  formFactor: BLUEMIX_PUBLIC
+  serverCapabilities:
+    authTypes:
+      - basic
+      - token
+  toolkit:
+    version_recommended: 2.1.30
+    version_minimum: 2.1.30
+catalog: >-
+  apic-catalog://apimanager.eu-gb.apiconnect.cloud.ibm.com/orgs/peretzitaygmailcom1606596667215-dev/catalogs/tst
