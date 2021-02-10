@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Test 2232'
+                echo 'Test 2232s'
             }
         }
         stage('Deploy') {
