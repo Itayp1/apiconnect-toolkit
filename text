@@ -1,5 +1,5 @@
-apic login --server=Cloud.apiconnect.ibmcloud.com --apikey=c3ceULYH21V62DDN_2eCrvub-UHYmLWNmuDl6xutvN-c
--server=apimanager.eu-gb.apiconnect.cloud.ibm.com  --all-organizations --all-catalogs 
+apic login --server=apimanager.eu-gb.apiconnect.cloud.ibm.com  --apikey=W_KZtnNjyKAA_SKCUU1F5bbP8_Y_p25UrvWS86vTU4uy
+apic login --server=apimanager.eu-gb.apiconnect.cloud.ibm.com  --all-organizations --all-catalogs 
 
 
 apic login --username some-user --password some-password --server mgmnthost.com
