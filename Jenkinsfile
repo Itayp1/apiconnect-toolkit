@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'start 223'
-
+                sh 'loggin to api connect apic login --server=apimanager.eu-gb.apiconnect.cloud.ibm.com  --apikey=W_KZtnNjyKAA_SKCUU1F5bbP8_Y_p25UrvWS86vTU4uy'
+                sh  'apic catalogs --all-organizations --server=apimanager.eu-gb.apiconnect.cloud.ibm.com'
             }
         }
         stage('Test') {
