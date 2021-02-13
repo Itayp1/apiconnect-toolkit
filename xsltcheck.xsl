@@ -11,7 +11,7 @@
   <xsl:template match="/">
     <xsl:variable name="p" select="apim:policyProperties()" />
     <xsl:message>
-      The value of my input property is 121212
+      The value of my input property is 12121244
       <xsl:value-of select="$p/a_property" />
     </xsl:message>
   </xsl:template>
