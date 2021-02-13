@@ -31,10 +31,10 @@ function checkForScripts(data) {
 
     switch (operation) {
       case "gatewayscript":
-        const { title } = extracetObj;
+        const { title: jsName } = extracetObj;
         // console.log(title);
         try {
-          obj.gatewayscript.source = fs.readFileSync(`./${title}.js`, "utf8");
+          obj.gatewayscript.source = fs.readFileSync(`./${jsName}.js`, "utf8");
         } catch (error) {}
         return obj;
         break;
@@ -83,11 +83,18 @@ function checkForScripts(data) {
 
         break;
 
+      case "xslt":
+        const { title } = extracetObj;
+
+        try {
+          obj.xslt.source = fs.readFileSync(`./${title}.xsl`, "utf8");
+        } catch (error) {}
+        return obj;
+        break;
+
       default:
         return obj;
         break;
     }
   });
 }
-
-function readJsFile() {}
