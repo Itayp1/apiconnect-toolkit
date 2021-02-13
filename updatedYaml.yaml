@@ -1,4 +1,4 @@
-swagger: "2.0"
+swagger: '2.0'
 info:
   x-ibm-name: mock
   title: mock
@@ -28,7 +28,7 @@ x-ibm-configuration:
       - gatewayscript:
           title: first
           version: 1.0.0
-          source: "console.log(\"first\");\r\nconsole.log(\"first\");\r\nconsole.log(\"first\");\r\nconsole.log(\"first\");\r\nconsole.log(\"first\");\r\n"
+          source: "console.log(\"first\");\r\nconsole.log(\"first\");\r\nconsole.log(\"first\");\r\nconsole.log(\"first\");\r\nconsole.log(\"srv\");\r\n"
       - xslt:
           title: xsltcheck
           input: false
@@ -36,7 +36,7 @@ x-ibm-configuration:
           source: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<xsl:stylesheet version=\"1.0\"\r\n  xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\r\n  xmlns:dp=\"http://www.datapower.com/extensions\"\r\n  xmlns:func=\"http://exslt.org/functions\"\r\n  xmlns:apim=\"http://www.ibm.com/apimanagement\" extension-element-prefixes=\"dp func apim\">\r\n\r\n  <!-- Contains the APIM functions -->\r\n  <xsl:import href=\"local:///isp/policy/apim.custom.xsl\" />\r\n\r\n  <xsl:template match=\"/\">\r\n    <xsl:variable name=\"p\" select=\"apim:policyProperties()\" />\r\n    <xsl:message>\r\n      The value of my input property is 121212\r\n      <xsl:value-of select=\"$p/a_property\" />\r\n    </xsl:message>\r\n  </xsl:template>\r\n\r\n</xsl:stylesheet>"
       - if:
           title: iftrue
-          condition: "true"
+          condition: 'true'
           execute: []
           version: 1.0.0
       - operation-switch:
@@ -69,7 +69,7 @@ x-ibm-configuration:
           source: "session.output.write({ newJSon: \"token///chipopo \"});\r\napim.gfhgfhgfh11('application/json'); \r\npopo=4\r\npopi=1"
       - if:
           title: if
-          condition: "true"
+          condition: 'true'
           execute:
             - gatewayscript:
                 title: conditional
@@ -85,12 +85,12 @@ paths:
   /test:
     get:
       responses:
-        "200":
+        '200':
           description: 200 OK
   /todo:
     get:
       responses:
-        "200":
+        '200':
           description: 200 OK
 definitions: {}
 tags: []
